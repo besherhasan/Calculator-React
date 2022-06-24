@@ -1,38 +1,174 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+*{
+font-family:'Oswald', sans-serif;
+font-size: 23px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body{
+  background-image: linear-gradient(to right, #4880EC, #f10000);
+ 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+justify-content: center;
+align-items: center;
+
+
+
+}
+.container{
+
+
+
+
+position: absolute;
+
+margin:19px;
+width: 256px;
+text-align: center;
+border:10px solid rgb(104, 5, 5);
+background: rgb(48, 32, 32);
+border-radius: 10px;
+
+
+
+
+}
+.keypad{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(60px,auto);
+}
+input[type="text"]{
+
+height:75px;
+width:249px;
+background-color: rgb(134, 126, 126);
+
+color:rgb(255, 255, 255);
+text-align: right;
+font-size: 25px;
+font-weight: 500;
+letter-spacing: 1px;
+
 }
 
-.App-link {
-  color: #61dafb;
+#clear{
+grid-column: 1/3;
+grid-row: 1;
+color: rgb(0, 0, 0);
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+#result{
+grid-column: 3/5;
+grid-row: 5;
+color: rgb(0, 0, 0);
+font-size: 30px;
+
+
+
+
+
+}
+
+#backspace{
+
+  color: rgb(0, 0, 0);
+
+
+
+}
+button{
+  border:none;
+  margin: 5px;
+  border-radius: 7px;
+  cursor:pointer;
+  background:#ff0000;
+color: aliceblue;
+font-weight: 500;
+
+
+}
+
+
+input:focus ,
+input:active,
+button:focus,
+button:active{
+
+outline: none;
+
+
+
+}
+
+
+.highlight{
+
+background:#56cbdb;
+
+
+
+}
+
+button:hover{
+
+  background-color: rgb(255, 102, 0);
+
+
+
+}
+
+h1{
+
+text-align: center;
+font-family: monospace;
+font-weight: bolder;
+
+}
+
+p{
+  text-align: center;
+font-family: monospace;
+font-weight: bolder;
+font-size: 14px;
+}
+
+.countrymade{
+
+font-size: 40%;
+font-family: cursive;
+color:azure;
+
+}
+
+.companyname{
+
+background-color: rgb(59, 57, 53);
+font-size:70% ;
+color: aliceblue;
+font-family: cursive;
+
+
+
+}
+
+.titleofpage{
+
+
+  font-family:cursive;
+
+
+}
+.creation{
+font-family: cursive;
+color:
+
+
 }
